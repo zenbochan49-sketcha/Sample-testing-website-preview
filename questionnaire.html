@@ -43,11 +43,11 @@
         <span class="required-note"><span aria-hidden="true">*</span> Required</span>
       </div>
 
-      <form id="questionnaire-form" class="webtzm-form wtzm-form" action="https://webtzm.com/submit" method="post" data-webtzm-form="frm_38e41fffc3304cabb4ddf9b139ec5565" data-wtzm-enhancement="client" data-wtzm-format-events="submit" data-wtzm-validation-style="red" data-wtzm-block-invalid="true" data-wtzm-validation-messages="true" data-wtzm-status-feedback="true" data-wtzm-lock-submit="true" data-wtzm-text-trim="true" data-wtzm-text-clean="true" data-wtzm-text-truncate="false" data-wtzm-text-max-chars="50000" data-wtzm-capture-referrer="false" data-wtzm-capture-utm="false" data-wtzm-capture-locale="false" data-wtzm-timestamp-zone="UTC">
+      <form id="questionnaire-form" class="webtzm-form wtzm-form" action="https://webtzm.com/submit" method="post" data-webtzm-form="frm_38e41fffc3304cabb4ddf9b139ec5565" data-wtzm-enhancement="client" data-wtzm-spam-protection="off" data-wtzm-format-events="submit" data-wtzm-validation-style="red" data-wtzm-block-invalid="true" data-wtzm-validation-messages="true" data-wtzm-status-feedback="true" data-wtzm-lock-submit="true" data-wtzm-text-trim="true" data-wtzm-text-clean="true" data-wtzm-text-truncate="false" data-wtzm-text-max-chars="50000" data-wtzm-capture-referrer="false" data-wtzm-capture-utm="false" data-wtzm-capture-locale="false" data-wtzm-timestamp-zone="UTC">
         <input type="hidden" name="_webtzm_form" value="frm_38e41fffc3304cabb4ddf9b139ec5565">
         <div class="field" data-wtzm-field="fullName">
           <label for="fullName">Your name <span class="required" aria-hidden="true">*</span></label>
-          <input id="fullName" type="text" name="fullName" autocomplete="name" placeholder="Enter your name" required>
+          <input id="fullName" type="text" name="fullName" placeholder="Enter your name *" required>
         </div>
         <div class="field" data-wtzm-field="email">
           <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
@@ -55,16 +55,16 @@
         </div>
         <div class="field" data-wtzm-field="location">
           <label for="location">Where are you from? <span class="optional">Optional</span></label>
-          <input id="location" type="text" name="location" placeholder="Enter where you are from">
+          <input id="location" type="text" name="location" placeholder="Enter where are you from? optional">
         </div>
         <div class="field" data-wtzm-field="projectName">
           <label for="projectName">What should we call your project? <span class="required" aria-hidden="true">*</span></label>
-          <input id="projectName" type="text" name="projectName" placeholder="Enter your project name" required>
+          <input id="projectName" type="text" name="projectName" placeholder="Enter what should we call your project? *" required>
         </div>
         <div class="field" data-wtzm-field="projectType">
           <label for="projectType">Project type <span class="required" aria-hidden="true">*</span></label>
           <select id="projectType" name="projectType" required>
-            <option value="">Select project type</option>
+            <option value="">Select Project type *</option>
             <option value="General">General</option>
             <option value="Business">Business</option>
             <option value="Support">Support</option>
@@ -73,7 +73,7 @@
         <div class="field" data-wtzm-field="priority">
           <label for="priority">How urgent is it?</label>
           <select id="priority" name="priority">
-            <option value="">Select urgency</option>
+            <option value="">Select How urgent is it?</option>
             <option value="General">General</option>
             <option value="Business">Business</option>
             <option value="Support">Support</option>
@@ -86,7 +86,7 @@
         <div class="field" data-wtzm-field="budget">
           <label for="budget">Estimated budget</label>
           <select id="budget" name="budget">
-            <option value="">Select estimated budget</option>
+            <option value="">Select Estimated budget</option>
             <option value="General">General</option>
             <option value="Business">Business</option>
             <option value="Support">Support</option>
@@ -94,7 +94,7 @@
         </div>
         <div class="field" data-wtzm-field="details">
           <label for="details">A little more about it <span class="optional">Optional</span></label>
-          <textarea id="details" name="details" rows="4" placeholder="Share any other details"></textarea>
+          <textarea id="details" name="details" rows="4" placeholder="Enter a little more about it optional"></textarea>
         </div>
         <div class="form-footer">
           <p class="privacy-note"><span class="lock-icon" aria-hidden="true">▣</span> Submitting sends your answers to Webtzm for recording.</p>
