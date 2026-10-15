@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A short questionnaire about your project needs and preferences.">
+  <title>Quick Questionnaire — Form Lab</title>
+  <link rel="stylesheet" href="https://webtzm.com/assets/styles/public-form.css?v=20260926-success-message-1">
+  <link rel="stylesheet" href="https://webtzm.com/assets/styles/embed-files.css?v=20260926-success-message-1">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script src="https://webtzm.com/assets/enhance-files.js?v=20260926-success-message-1" defer></script>
+  <script src="https://webtzm.com/assets/enhance.js?v=20260926-success-message-1" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html#top" aria-label="Form Lab home">
+        <span class="brand-mark" aria-hidden="true">f.</span>
+        <span>Form Lab</span>
+      </a>
+      <nav class="topbar-links" aria-label="Forms">
+        <a href="index.html">Project form</a>
+        <span class="top-note"><span class="status-dot" aria-hidden="true"></span>Interactive demo</span>
+      </nav>
+    </header>
+
+    <section class="intro" id="top" aria-labelledby="page-title">
+      <p class="eyebrow">A quick questionnaire</p>
+      <h1 id="page-title">A few questions<br><span>to get to know you.</span></h1>
+      <p class="intro-copy">Tell us a little about what you need and what matters most. It only takes a minute.</p>
+      <div class="step-line" aria-label="Questionnaire">
+        <span class="step-number">01</span><span class="step-rule" aria-hidden="true"></span><span class="step-label">Your preferences</span>
+      </div>
+    </section>
+
+    <section class="form-card" aria-labelledby="form-heading">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">Your answers help us understand</p>
+          <h2 id="form-heading">Quick questionnaire</h2>
+        </div>
+        <span class="required-note"><span aria-hidden="true">*</span> Required</span>
+      </div>
+
+      <form id="questionnaire-form" class="webtzm-form wtzm-form" action="https://webtzm.com/submit" method="post" data-webtzm-form="frm_38e41fffc3304cabb4ddf9b139ec5565" data-wtzm-enhancement="client" data-wtzm-format-events="submit" data-wtzm-validation-style="red" data-wtzm-block-invalid="true" data-wtzm-validation-messages="true" data-wtzm-status-feedback="true" data-wtzm-lock-submit="true" data-wtzm-text-trim="true" data-wtzm-text-clean="true" data-wtzm-text-truncate="false" data-wtzm-text-max-chars="50000" data-wtzm-capture-referrer="false" data-wtzm-capture-utm="false" data-wtzm-capture-locale="false" data-wtzm-timestamp-zone="UTC">
+        <input type="hidden" name="_webtzm_form" value="frm_38e41fffc3304cabb4ddf9b139ec5565">
+        <div class="field" data-wtzm-field="fullName">
+          <label for="fullName">Your name <span class="required" aria-hidden="true">*</span></label>
+          <input id="fullName" type="text" name="fullName" autocomplete="name" placeholder="Enter your name" required>
+        </div>
+        <div class="field" data-wtzm-field="email">
+          <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+          <input id="email" type="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+        </div>
+        <div class="field" data-wtzm-field="location">
+          <label for="location">Where are you from? <span class="optional">Optional</span></label>
+          <input id="location" type="text" name="location" placeholder="Enter where you are from">
+        </div>
+        <div class="field" data-wtzm-field="projectName">
+          <label for="projectName">What should we call your project? <span class="required" aria-hidden="true">*</span></label>
+          <input id="projectName" type="text" name="projectName" placeholder="Enter your project name" required>
+        </div>
+        <div class="field" data-wtzm-field="projectType">
+          <label for="projectType">Project type <span class="required" aria-hidden="true">*</span></label>
+          <select id="projectType" name="projectType" required>
+            <option value="">Select project type</option>
+            <option value="General">General</option>
+            <option value="Business">Business</option>
+            <option value="Support">Support</option>
+          </select>
+        </div>
+        <div class="field" data-wtzm-field="priority">
+          <label for="priority">How urgent is it?</label>
+          <select id="priority" name="priority">
+            <option value="">Select urgency</option>
+            <option value="General">General</option>
+            <option value="Business">Business</option>
+            <option value="Support">Support</option>
+          </select>
+        </div>
+        <div class="field" data-wtzm-field="targetDate">
+          <label for="targetDate">Ideal start date</label>
+          <input id="targetDate" type="date" name="targetDate">
+        </div>
+        <div class="field" data-wtzm-field="budget">
+          <label for="budget">Estimated budget</label>
+          <select id="budget" name="budget">
+            <option value="">Select estimated budget</option>
+            <option value="General">General</option>
+            <option value="Business">Business</option>
+            <option value="Support">Support</option>
+          </select>
+        </div>
+        <div class="field" data-wtzm-field="details">
+          <label for="details">A little more about it <span class="optional">Optional</span></label>
+          <textarea id="details" name="details" rows="4" placeholder="Share any other details"></textarea>
+        </div>
+        <div class="form-footer">
+          <p class="privacy-note"><span class="lock-icon" aria-hidden="true">▣</span> Submitting sends your answers to Webtzm for recording.</p>
+          <button class="wtzm-submit" type="submit">Submit form <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="form-status" data-wtzm-send-status role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <dialog class="thank-you-dialog" id="thank-you-dialog" aria-labelledby="thank-you-heading">
+      <div class="dialog-icon" aria-hidden="true">✓</div>
+      <p class="eyebrow">Response received</p>
+      <h2 id="thank-you-heading">Thank you for your answers</h2>
+      <p class="dialog-copy">We’ll contact you as soon as we can.</p>
+      <button class="dialog-close" type="button" id="close-thank-you">Close</button>
+    </dialog>
+
+    <footer class="footer"><span>FORM LAB</span><span>Made for trying things out <span aria-hidden="true">✳</span></span></footer>
+  </main>
+</body>
+</html>

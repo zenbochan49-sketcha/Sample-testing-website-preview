@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple, polished project request form for testing form flows.">
+  <title>Project Request — Form Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Form Lab home">
+        <span class="brand-mark" aria-hidden="true">f.</span>
+        <span>Form Lab</span>
+      </a>
+      <nav class="topbar-links" aria-label="Forms">
+        <a href="questionnaire.html">Questionnaire</a>
+        <span class="top-note"><span class="status-dot" aria-hidden="true"></span>Interactive demo</span>
+      </nav>
+    </header>
+
+    <section class="intro" id="top" aria-labelledby="page-title">
+      <p class="eyebrow">A tiny test project</p>
+      <h1 id="page-title">Good projects<br><span>start with a form.</span></h1>
+      <p class="intro-copy">A clean little space to try out a project request flow. Fill in the details and see your submission come together.</p>
+      <div class="step-line" aria-label="Step 1 of 1">
+        <span class="step-number">01</span><span class="step-rule" aria-hidden="true"></span><span class="step-label">Project details</span>
+      </div>
+    </section>
+
+    <section class="form-card" aria-labelledby="form-heading">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">Tell us what you're thinking</p>
+          <h2 id="form-heading">Project request</h2>
+        </div>
+        <span class="required-note"><span aria-hidden="true">*</span> Required</span>
+      </div>
+
+      <form id="project-form" class="webtzm-form" action="https://webtzm.com/submit/frm_7c9312496a27479589530ecfa776e5ff" method="post">
+        <div class="field-grid two-col">
+          <div class="field">
+            <label for="full-name">Your name <span class="required" aria-hidden="true">*</span></label>
+            <input id="full-name" name="fullName" autocomplete="name" placeholder="e.g. Alex Morgan" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="alex@example.com" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="location">Where are you from? <span class="optional">Optional</span></label>
+          <input id="location" name="location" autocomplete="country-name" placeholder="e.g. Kuala Lumpur, Malaysia">
+        </div>
+
+        <div class="field">
+          <label for="project-name">What should we call your project? <span class="required" aria-hidden="true">*</span></label>
+          <input id="project-name" name="projectName" placeholder="e.g. A better morning routine" required>
+        </div>
+
+        <div class="field-grid two-col">
+          <div class="field">
+            <label for="project-type">Project type <span class="required" aria-hidden="true">*</span></label>
+            <select id="project-type" name="projectType" required>
+              <option value="" disabled selected>Choose a type</option>
+              <option>Website</option>
+              <option>Mobile app</option>
+              <option>Brand identity</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="priority">How urgent is it?</label>
+            <select id="priority" name="priority">
+              <option>Just exploring</option>
+              <option>Whenever works</option>
+              <option>Soon, please</option>
+              <option>It's a priority</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-grid two-col">
+          <div class="field">
+            <label for="target-date">Ideal start date</label>
+            <input id="target-date" name="targetDate" type="date">
+          </div>
+          <div class="field">
+            <label for="budget">Estimated budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range</option>
+              <option>Under $1,000</option>
+              <option>$1,000 – $5,000</option>
+              <option>$5,000 – $10,000</option>
+              <option>$10,000+</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="details">A little more about it <span class="optional">Optional</span></label>
+          <textarea id="details" name="details" data-character-count rows="4" maxlength="500" placeholder="What are you hoping to make? Anything we should know?"></textarea>
+          <div class="field-hint"><span>Keep it short and sweet.</span><span id="character-count">0 / 500</span></div>
+        </div>
+
+        <div class="form-footer">
+          <p class="privacy-note"><span class="lock-icon" aria-hidden="true">▣</span> Submitting sends your details to Webtzm for recording.</p>
+          <button type="submit"><span class="button-label">Send project request</span><span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+      </form>
+    </section>
+
+    <dialog class="thank-you-dialog" id="thank-you-dialog" aria-labelledby="thank-you-heading">
+      <div class="dialog-icon" aria-hidden="true">✓</div>
+      <p class="eyebrow">Request received</p>
+      <h2 id="thank-you-heading">Thank you for your enquiry</h2>
+      <p class="dialog-copy">We’ll contact you as soon as we can.</p>
+      <button class="dialog-close" type="button" id="close-thank-you">Close</button>
+    </dialog>
+
+    <footer class="footer"><span>FORM LAB</span><span>Made for trying things out <span aria-hidden="true">✳</span></span></footer>
+  </main>
+</body>
+</html>
